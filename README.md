@@ -13,9 +13,13 @@ First, I use S3 to:
   Steps to create an S3 bucket:
   
   Go to the S3 Console
+  
   Click "Create Bucket"
+  
   Bucket Name: my-website-bucket
+  
   Uncheck "Block all public access"
+  
   Enable Static Website Hosting under "Properties"
 
 I also use Route 53
