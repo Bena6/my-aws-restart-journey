@@ -6,7 +6,8 @@ Core AWS Services Used:
 First, I use S3 to:
 - Store the website files
 - Enable static website hosting
-- Allow public read access so anyone can view the website
+- Allow public read access so anyone can view the website.
+- 
 **Amazon S3** (Simple Storage Service) is an object storage service that offers industry-leading scalability, data availability, security, and performance.
 
   Steps to create an S3 bucket:
