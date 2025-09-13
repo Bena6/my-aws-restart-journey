@@ -1,7 +1,8 @@
 # my-aws-restart-journey
 This project demonstrates how to host a static website using Amazon S3. It includes setting up a custom domain using Route 53, and enabling HTTPS using CloudFront and AWS Certificate Manager.
-Core AWS Services Used - Explained
-In this project, I use S3 to:
+
+Core AWS Services Used:
+First, I use S3 to:
 - Store the website files
 - Enable static website hosting
 - Allow public read access so anyone can view the website
