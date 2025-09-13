@@ -1,4 +1,5 @@
-# my-aws-restart-journey
+Overview:
+
 This project demonstrates how to host a static website using Amazon S3. It includes setting up a custom domain using Route 53, and enabling HTTPS using CloudFront and AWS Certificate Manager.
 
 Core AWS Services Used:
