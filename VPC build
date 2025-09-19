@@ -1,1 +1,9 @@
+Introduction
+In this project, I will set up a custom Virtual Private Cloud (VPC) from scratch inside AWS.
+A VPC is your own private city in the cloud — divided into neighborhoods (subnets) and linked to the outside world (internet gateway).
 
+Therefore I will:
+
+Create a VPC
+Set up a public subnet
+Attach an internet gateway for external connectivity
