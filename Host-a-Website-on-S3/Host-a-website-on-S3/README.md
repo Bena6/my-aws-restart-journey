@@ -72,7 +72,7 @@ Add index.html and the unzipped folder
 Click Upload
 HTML (HyperText Markup Language) builds your web pages.
 
-🌐 Step 3: Enable Static Website hosting
+### Step 3: Enable Static Website hosting
 
 Go to the Properties tab of your bucket
 
