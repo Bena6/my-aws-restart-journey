@@ -25,7 +25,7 @@ Allow HTTP (80) from anywhere (0.0.0.0/0).
 
 Click launch instance.
 
-# Step 2: Connect to Instance
+### Step 2: Connect to Instance
 
 In the EC2 console, select instance → Connect.
 
@@ -37,7 +37,7 @@ ssh -i my-keypair.pem ec2-user@<PUBLIC_IP>
 
 We are now inside your EC2 instance.
 
-# Install and Run a Web Server
+### Install and Run a Web Server
 
 Simple static site with Apache:
 
@@ -53,7 +53,7 @@ echo "<h1>Hello from EC2 Web Server 🚀</h1>" | sudo tee /var/www/html/index.ht
 
 Now open http://<PUBLIC_IP> in the browser — should see your message created.
 
-# Step 4: Explore Security Groups
+### Step 4: Explore Security Groups
 
 Go to EC2 → Security Groups.
 
@@ -65,7 +65,7 @@ Add it back to restore access.
 
 This shows how security groups act like a firewall.
 
-# Step 5: Add a Load Balancer (Bonus)
+### Step 5: Add a Load Balancer (Bonus)
 
 In EC2 → Load Balancers → Create Load Balancer.
 
@@ -85,7 +85,15 @@ Complete setup.
 
 Now instead of hitting the instance’s public IP, use the Load Balancer DNS name (shown in the console).
 
-# What I've learnt
+### Step 6: Clean up
+
+Terminate EC2 instance.
+
+Delete load balancer & target group.
+
+Remove unused key pairs.
+
+### What I've learnt
 
 Launching and connecting to EC2 instances.
 
