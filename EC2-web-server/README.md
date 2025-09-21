@@ -49,7 +49,7 @@ sudo systemctl start httpd
 
 sudo systemctl enable httpd
 
-echo "<h1>Hello from EC2 Web Server </h1>" | sudo tee /var/www/html/index.html
+echo "Hello from EC2 Web Server" | sudo tee /var/www/html/index.html
 
 Now open http://<PUBLIC_IP> in the browser — should see your message created.
 
