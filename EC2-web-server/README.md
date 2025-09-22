@@ -35,7 +35,7 @@ In the terminal, run: chmod 400 my-keypair.pem
 
 ssh -i my-keypair.pem ec2-user@<PUBLIC_IP>
 
-We are now inside your EC2 instance.
+We are now inside the EC2 instance.
 
 ### Install and Run a Web Server
 
@@ -51,7 +51,7 @@ sudo systemctl enable httpd
 
 echo "Hello from EC2 Web Server" | sudo tee /var/www/html/index.html
 
-Now open http://<PUBLIC_IP> in the browser — should see your message created.
+Now let's open http://<PUBLIC_IP> in the browser — should see the message created.
 
 ### Step 4: Explore Security Groups
 
@@ -79,11 +79,11 @@ Listeners: HTTP (80).
 
 Security group: allow HTTP (80).
 
-Create a Target Group → Register your EC2 instance.
+Create a Target Group → Register the EC2 instance.
 
 Complete setup.
 
-Now instead of hitting the instance’s public IP, use the Load Balancer DNS name (shown in the console).
+Now instead of hitting the instance’s public IP, we'll use the Load Balancer DNS name (shown in the console).
 
 ### Step 6: Clean up
 
