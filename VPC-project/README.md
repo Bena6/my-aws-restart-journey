@@ -2,7 +2,7 @@
 In this project, we'll set up a custom Virtual Private Cloud (VPC) from scratch inside AWS.
 Think of a VPC like building your own private city in the cloud — dividing it into neighborhoods (subnets) and linking it to the outside world (internet gateway).
 
-#### You'll learn how to:
+#### We'll learn how to:
 
 Create a VPC
 
@@ -16,7 +16,7 @@ FREE (Eligible under AWS Free Tier)
 
 #### Objectives
 
-create Amazon VPC
+Create Amazon VPC
 
 Public Subnet
 
@@ -40,31 +40,29 @@ Log in to the AWS Management Console.
 
 Search for VPC in the search bar.
 
-In the left navigation pane, select Your VPCs.
+In the left navigation pane, select VPCs.
 
-Click Create VPC.
+Click create VPC.
 
-Choose VPC Only option.
+Choose VPC only option.
 
 Set:
 
-Name tag: Bena VPC
+Name tag: Bena-VPC
 
 IPv4 CIDR block: 10.0.0.0/16
 
-Take a screenshot of your setup page.
-
-Click Create VPC. VPC is ready!
+Click create VPC. VPC is ready!
 
 ### STEP 2. Create a Public Subnet
 
-In the VPC Dashboard, choose Subnets from the left menu.
+In the VPC dashboard, choose Subnets from the left menu.
 
-Click Create Subnet.
+Click create Subnet.
 
 Fill:
 
-VPC ID: XYZ VPC
+VPC ID: Bena-VPC
 
 Subnet name: Public 1
 
@@ -72,7 +70,7 @@ Availability Zone: Choose the first AZ available.
 
 IPv4 CIDR block: 10.0.0.0/24
 
-Click Create Subnet.
+Click create Subnet.
 
 Enable Auto-Assign Public IP.
 
@@ -91,13 +89,13 @@ Auto-assigning public IP addresses ensures instances in this subnet can be acces
 
 In the left menu, click Internet Gateways.
 
-Click Create Internet Gateway.
+Click create Internet Gateway.
 
 Set:
 
 Name tag: Bena IG
 
-Click Create Internet Gateway.
+Click create Internet Gateway.
 
 Attach the Internet Gateway to VPC:
 
@@ -105,7 +103,7 @@ Select Bena IG.
 
 Click Actions > Attach to VPC.
 
-Choose Bena VPC.
+Choose Bena-VPC.
 
 Click Attach Internet Gateway.
 
