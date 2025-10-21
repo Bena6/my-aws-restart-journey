@@ -12,6 +12,13 @@ Objectives
 - Optionally, use AWS Lambda and SNS for backend automation and notifications.  
 - Prepare a presentation outlining the benefits of AWS migration.
 
+Architecture Overview
+
+
+
+
+
+
 
 AWS Services Used
 
@@ -32,11 +39,11 @@ Step 1: create a static Website
 3. Store media (images, logo, menu photos) in `/assets/images`.  
 
 Step 2.1: deploy to Amazon S3
-
-1. Create an S3 bucket : name: tasty-bistro-website.  
-2. Enable Static Website Hosting and Public Access.  
-3. Upload all website files to the bucket.  
-4. Note the website endpoint (e.g., `http://tasty-bistro-website.s3-website-us-east-1.amazonaws.com`).
+Go to AWS Management Console → search S3 → Create Bucket
+name: tasty-bistro-website.  
+ 	Enable Static Website Hosting and Public Access.  
+Upload all website files to the bucket.  
+Note the website endpoint (e.g., `http://tasty-bistro-website.s3-website-us-east-1.amazonaws.com`).
 
 Enhancements: 
 
@@ -46,14 +53,15 @@ Connect your S3 bucket as the origin.
 
 
 Step 3.1: add Authentication with AWS Cognito
-1. Create a Cognito User Pool → allow users to register and log in.  
-2. Integrate Cognito into your website using the AWS SDK.  
-3. Restrict access to booking/order pages to authenticated users only.
-
-Step 3.2: Integrate Cognito with Website
-Create signin.html for user login and link it to booking.html and order.html so only logged-in users can book/order
+Go to Amazon cognito → Create a User Pool
+Enable email or username as the login option.
+Allow self-registration so customers can sign up.
+After creation, note your Pool ID and App Client ID.
+Integrate Cognito into your website using the AWS SDK.  
+Restrict access to booking/order pages to authenticated users only.
 
 Step 4: Set Up DynamoDB for Bookings and Orders
+Go to DynamoDB → Create Table
 - Table 1: Bookings → Partition Key: `BookingID`
 - Table 2: Orders → Partition Key: `OrderID`
 
