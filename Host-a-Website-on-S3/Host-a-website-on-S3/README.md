@@ -98,8 +98,6 @@ Click Actions > Make public using ACL
 
 Now reload your website URL — your static site should be live 
 
-Delete Resources
-To avoid charges
+Delete Resources to avoid charges.
 
-All S3 objects
-The S3 bucket
+First delete all S3 objects, then delete bucket.
