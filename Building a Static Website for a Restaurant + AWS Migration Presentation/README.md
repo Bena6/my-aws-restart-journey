@@ -12,13 +12,6 @@ Objectives
 - Optionally, use AWS Lambda and SNS for backend automation and notifications.  
 - Prepare a presentation outlining the benefits of AWS migration.
 
-Architecture Overview
-
-
-
-
-
-
 
 AWS Services Used
 
