@@ -37,13 +37,13 @@ Amazon S3 can host websites composed of HTML and image files.
 
 ### Step 1: Create an S3 Bucket
 
-Log in to your AWS console
+Log in to AWS console
 
 Search for S3
 
 Click Create bucket
 
-Bucket name: XYZ-website-project-NAME
+Bucket name: bena-website-bucket
 
 Select your nearest AWS Region
 
@@ -54,7 +54,7 @@ Block Public Access: Unchecked (acknowledge warning)
 Bucket Versioning: Enabled
 
 Click Create bucket
-💡 S3 bucket names are globally unique to avoid conflicts.
+Note: S3 bucket names are globally unique to avoid conflicts.
 
 ### Step 2: Upload Website Content
 
@@ -62,8 +62,6 @@ Open your bucket
 
 Download and unzip these files:
 index.html
-
-XYZ - Everyone...love_files.
 
 Go to Objects tab > click Upload
 
@@ -98,7 +96,7 @@ Select index.html and the image folder files
 
 Click Actions > Make public using ACL
 
-Now reload your website URL — your static site should be live 🎉
+Now reload your website URL — your static site should be live 
 
 Delete Resources
 To avoid charges
